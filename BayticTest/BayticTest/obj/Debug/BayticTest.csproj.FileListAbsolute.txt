@@ -1,0 +1,8 @@
+E:\Projects\BayticTest\BayticTest\BayticTest\bin\Debug\BayticTest.exe
+E:\Projects\BayticTest\BayticTest\BayticTest\bin\Debug\BayticTest.pdb
+E:\Projects\BayticTest\BayticTest\BayticTest\obj\Debug\BayticTest.csprojResolveAssemblyReference.cache
+E:\Projects\BayticTest\BayticTest\BayticTest\obj\Debug\BayticTest.Properties.Resources.resources
+E:\Projects\BayticTest\BayticTest\BayticTest\obj\Debug\BayticTest.csproj.GenerateResource.Cache
+E:\Projects\BayticTest\BayticTest\BayticTest\obj\Debug\BayticTest.exe
+E:\Projects\BayticTest\BayticTest\BayticTest\obj\Debug\BayticTest.pdb
+E:\Projects\BayticTest\BayticTest\BayticTest\obj\Debug\BayticTest.FormMain.resources

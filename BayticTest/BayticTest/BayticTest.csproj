@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27852C8C-82F8-47E4-A026-0650AFCE9785}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BayticTest</RootNamespace>
+    <AssemblyName>BayticTest</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\Base\GOControl.cs" />
+    <Compile Include="Scripts\Base\GameObject.cs" />
+    <Compile Include="Scripts\Base\Enums.cs" />
+    <Compile Include="Scripts\Base\IO\Sprite.cs" />
+    <Compile Include="Scripts\Base\IO\IO.cs" />
+    <Compile Include="Scripts\Base\IO\Rect.cs" />
+    <Compile Include="Scripts\Base\IO\ControlsInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scripts\Base\GameCode.cs" />
+    <Compile Include="Scripts\Base\IO\ControlCtrl.cs" />
+    <Compile Include="Scripts\Base\Controllers\CustomControllers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scripts\Base\Physic\PhysicObj.cs" />
+    <Compile Include="Scripts\Base\Physic\PhysicsCalk.cs" />
+    <Compile Include="Scripts\Base\Vector2.cs" />
+    <Compile Include="Others\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\Game\GameBuilder.cs" />
+    <Compile Include="Scripts\Game\NoGamePages.cs" />
+    <Compile Include="Scripts\Game\Rocket.cs" />
+    <EmbeddedResource Include="Others\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345075958.jpg" />
+    <Content Include="Resources\alpha_channel.png" />
+    <None Include="Resources\FinishAnim\FA2.png" />
+    <None Include="Resources\FinishAnim\FA1.png" />
+    <None Include="Resources\FinishAnim\FA7.png" />
+    <None Include="Resources\FinishAnim\FA6.png" />
+    <None Include="Resources\FinishAnim\FA5.png" />
+    <None Include="Resources\FinishAnim\FA4.png" />
+    <None Include="Resources\FinishAnim\FA3.png" />
+    <None Include="Resources\Explousion\New\Exp1.png" />
+    <None Include="Resources\Explousion\New\Exp0.png" />
+    <None Include="Resources\Explousion\New\Exp12.png" />
+    <None Include="Resources\Explousion\New\Exp11.png" />
+    <None Include="Resources\Explousion\New\Exp10.png" />
+    <None Include="Resources\Explousion\New\Exp9.png" />
+    <None Include="Resources\Explousion\New\Exp8.png" />
+    <None Include="Resources\Explousion\New\Exp7.png" />
+    <None Include="Resources\Explousion\New\Exp6.png" />
+    <None Include="Resources\Explousion\New\Exp5.png" />
+    <None Include="Resources\Explousion\New\Exp4.png" />
+    <None Include="Resources\Explousion\New\Exp3.png" />
+    <None Include="Resources\Explousion\New\Exp2.png" />
+    <None Include="Resources\GameOverBack.png" />
+    <None Include="Resources\WinBack.png" />
+    <None Include="Resources\photo.png" />
+    <None Include="Resources\Finish1.png" />
+    <None Include="Resources\fon.png" />
+    <None Include="Resources\Explousion\E16.png" />
+    <None Include="Resources\Explousion\E15.png" />
+    <None Include="Resources\Explousion\E14.png" />
+    <None Include="Resources\Explousion\E13.png" />
+    <None Include="Resources\Explousion\E12.png" />
+    <None Include="Resources\Explousion\E11.png" />
+    <None Include="Resources\Explousion\E10.png" />
+    <None Include="Resources\Explousion\E9.png" />
+    <None Include="Resources\Explousion\E8.png" />
+    <None Include="Resources\Explousion\E7.png" />
+    <None Include="Resources\Explousion\E6.png" />
+    <None Include="Resources\Explousion\E5.png" />
+    <None Include="Resources\Explousion\E4.png" />
+    <None Include="Resources\Explousion\E3.png" />
+    <None Include="Resources\Explousion\E2.png" />
+    <None Include="Resources\Explousion\E1.png" />
+    <None Include="Resources\Fire\Fre4.png" />
+    <None Include="Resources\Fire\Fire3.png" />
+    <None Include="Resources\Fire\Fire2.png" />
+    <None Include="Resources\Fire\Fire1.png" />
+    <None Include="Resources\Black.bmp" />
+    <None Include="Resources\Rocket.png" />
+    <None Include="Resources\Finish.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
